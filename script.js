@@ -7,7 +7,7 @@ document.getElementById("formulario").addEventListener("submit", function(e){
 
     // Validación:
     // Mínimo 8 caracteres, al menos una letra y un número
-    let patron = palomino69
+    let patron = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
     if(patron.test(password)){
         mensaje.style.color = "lime";
